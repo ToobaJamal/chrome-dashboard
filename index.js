@@ -101,3 +101,10 @@ console.log(document.getElementById("main-focus-parent").lastElementChild)
 function deleteTodo() {
 
 }
+
+const main = localStorage.getItem("focus")
+console.log(main)
+if(main) {
+    document.getElementById("main-focus-parent").lastElementChild.remove()
+    document.getElementById("main-focus-parent").innerHTML +=  `<p>${main}</p>`
+}
