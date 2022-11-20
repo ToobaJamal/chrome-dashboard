@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url(images/nature.jpg); */
+    background: no-repeat center center fixed url(images/nature.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 0px 5px #242424;
+}
+
+main {
+    height: 100vh;
+    padding: 2em;
+}
+
+.top-parent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div#top {
+    color: white;
+    /* height: 25vh; */
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+#weather, #city {
+    margin: 0;
+}
+
+div#middle {
+    text-align: center;
+}
+
+div#bottom {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+   
+}
+
+/* #quote {
+    flex: 0 0 60%;
+} */
+#todo {
+    border: 1px solid wheat;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#quote {
+    max-width: 50%;
+}
+
+#todo-list {
+    position: fixed;
+    left: 78%;
+    top: 57%;
+    background-color: aliceblue;
+    border-radius: 9px;
+    width: 20%;
+    min-height: 30vh;
+    padding: 0.7em;
+}
+
+#todo-list {
+    color: #242424;
+    text-shadow: none;
+    visibility: hidden;
+}
+
+.today {
+    text-align: center;
+    margin: 0;
+}
+
+.list {
+    margin-top: 1em;
+}
+
+.checkbox {
+    height: 12px;
+    width: 12px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.list-item > p {
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    border: 1px solid firebrick;
+    padding: 0;
+}
+
+.remove {
+    margin-left: auto;
+    padding-right: 0.6em;
+    cursor: pointer;
+}
