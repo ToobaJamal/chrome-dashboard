@@ -218,13 +218,13 @@ div#bottom {
     align-items: center;
 }
 
-@media (min-width: 1500px) and (max-width: 1920) {
+@media (min-width: 1900px) and (max-width: 3440px) {
     html, body {
         font-size: 20px;
     }
 }
 
-@media (min-width: 1920px) and (max-width: 3440px) {
+@media (min-width: 3440px) {
     html, body {
         font-size: 30px;
     }
