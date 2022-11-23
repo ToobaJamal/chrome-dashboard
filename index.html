@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
 <body>
     <main>
-        <div class="top-parent">
-            <div id="top">
-                <p id="weather">35</p>
-                <p id="city">karachi</p>
+        <div class="main-content">
+            <div id="weather">
+                <div class="icon-temp">
+                    <img id="weather-icon" src="" alt=""/>                
+                    <p id="temperature"></p>
+                </div>
+                <p id="city"></p>
             </div>
             <div id="middle">
                 <h1 id="time"></h1>
                 <div id="main-focus-parent">
-                    <p>What is your main focus for today?</p>
-                    <form><input id="main-focus" type="text"></form>
+                    <form id="focus-form">
+                        <p class="focus-q">What is your main focus for today?</p>
+                        <input id="main-focus" type="text">
+                    </form>
+                    <p id="todays-focus" class="none"></p>
                 </div>
             </div>
             <div id="bottom">
-                <p>Author</p>
+                <p id="author">Author</p>
                 <p id="quote"></p>
                 <div id="todo">
                     <p>Todo</p>
@@ -31,11 +41,14 @@
             </div>
         </div>
         <div id="todo-list">
-            <h3 class="today" id="today">Today</h3>
-            <div class="list" id="list">
-                <p id="add-todo">Add a todo to get started</p>
+            <div class="today-parent">
+                <h3 class="today" id="today">Today</h3>
+                <i class="fa fa-minus" aria-hidden="true" id="minimize"></i>
             </div>
-            <form>
+            <div class="list" id="list">
+                
+            </div>
+            <form class="todo-form">
                 <input type="text" id="todo-val" placeholder="add note" value=""/>
             </form>
         </div>
