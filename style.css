@@ -9,37 +9,154 @@ html, body {
 
 body {
     /* background-image: url(images/nature.jpg); */
-    background: no-repeat center center fixed url(images/nature.jpg); 
+    background: no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
+    color: #FFFFFF;
     text-shadow: 0px 0px 5px #242424;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* Typography */
+
+#temperature {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#weather-icon {
+    width: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+#todo, #author, #quote {
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+#time {
+    font-size: 4em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+#todays-focus {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#main-focus {
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+.focus-q {
+    font-weight: 500;
+    font-size: 1.6em;
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    color: #189AB4;
+    font-weight: 500;
+}
+
+.grey{
+    background-color: #189AB4;
+}
+
+.checkbox {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #189AB4;
+    border-radius: 3px;
+}
+
+.remove {
+    font-weight: 600;
+}
+
+.remove, .today {
+    color: #3B3B3B;
+}
+
+.today {
+    margin: 0;
+}
+
+#todo, .remove, #minimize {
+    cursor: pointer;
+}
+
+/* Layout */
 
 main {
     height: 100vh;
     padding: 2em;
 }
 
-.top-parent {
+.todo-form {
+    margin-top: auto;
+    margin-inline: auto;
+    width: 80%;
+    border-bottom: 2px solid #C0C0C0;
+}
+
+#todo-val {
+    width: 100%;
+    border: none;
+}
+
+#focus-form {
+    width: 50%;
+    margin-inline: auto;
+}
+
+#main-focus {
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    height: 2em;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+    background: transparent;
+}
+
+.main-content {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-div#top {
+div#weather {
     color: white;
-    /* height: 25vh; */
     text-align: right;
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
 }
 
-#weather, #city {
+.icon-temp {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+    align-items: center;
+}
+
+#temperature, #city {
     margin: 0;
 }
 
@@ -52,22 +169,8 @@ div#bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
-   
 }
 
-/* #quote {
-    flex: 0 0 60%;
-} */
-#todo {
-    border: 1px solid wheat;
-    cursor: pointer;
-    /* display: none; */
-}
-
-#quote {
-    max-width: 50%;
-}
 
 #todo-list {
     position: fixed;
@@ -78,6 +181,8 @@ div#bottom {
     width: 20%;
     min-height: 30vh;
     padding: 0.7em;
+    display: flex;
+    flex-direction: column;
 }
 
 #todo-list {
@@ -86,20 +191,8 @@ div#bottom {
     visibility: hidden;
 }
 
-.today {
-    text-align: center;
-    margin: 0;
-}
-
 .list {
     margin-top: 1em;
-}
-
-.checkbox {
-    height: 12px;
-    width: 12px;
-    border: 1px solid black;
-    border-radius: 3px;
 }
 
 .list-item > p {
@@ -111,12 +204,28 @@ div#bottom {
     align-items: center;
     gap: 10px;
     margin: 0;
-    border: 1px solid firebrick;
     padding: 0;
 }
 
 .remove {
     margin-left: auto;
     padding-right: 0.6em;
-    cursor: pointer;
+}
+
+.today-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1500px) and (max-width: 1920) {
+    html, body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3440px) {
+    html, body {
+        font-size: 30px;
+    }
 }
