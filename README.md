@@ -8,3 +8,10 @@ Chrome personal dashboard built with Vanilla JavaScript. New background images a
 * HTML5
 * CSS Flexbox
 * Vanilla JavaScript
+
+## Authors
+- GitHub: [ToobaJamal](https://github.com/ToobaJamal)
+- LinkedIn: [Tooba Jamal](https://www.linkedin.com/in/tooba-jamal/)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
