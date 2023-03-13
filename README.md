@@ -8,7 +8,6 @@ Chrome personal dashboard built with Vanilla JavaScript. New background images a
 [Live site URL](https://personalchromedashboard.netlify.app/)
 
 ## Technologies Used
-## Technologies Used
 ![HTML BADGE](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS BADGE](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![JAVASCRIPT BADGE](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
